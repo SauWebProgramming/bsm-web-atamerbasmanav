@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PatiShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header style="text-align:center">
+        <img src="Users\asus1\Desktop\patişop\id2.png" width="50%" alt="logo yüklenemedi">
+        <div class="menü">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <ul class="menü_ul">
+                        <li class="menü_li" id="anasayfa"><a href="ana_ekran.html">Ana sayfa</a></li>
+                        <li class="menü_li" id="hakkımızda"><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li class="menü_li" id="evilcil_hayvanlar">
+                            <a href="#Ders">Evcil Hayvan Ürünleri</a>
+                            <ul class="menü_ul">
+                                <li class="menü_li" id="kopek"><a href="kopek.html">Köpek Ürünleri</a></li>
+                                <li class="menü_li" id="kedi"><a href="kedi.html">Kedi Ürünleri</a></li>
+                            </ul>
+                        </li>
+                        <li class="menü_li" id="iletisim"><a href="iletisim.html">İletişim</a></li>
+                        <li class="menü_li" id="kaydol"><a href="kayit_ekrani.html">Kaydol</a></li>
+                    </ul>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h6><strong> <ins>İletişim Bilgileri</ins> </strong></h6>
+                    <strong> E-posta:</strong> <i> evcilhayvanlarındünyasi@gmail.com</i>
+                    <br>
+                    <strong> Telefon</strong> <i> +90 0000 000 00 00</i>
+                    <br>
+                </div>
+                <div class="col-4">
+                    <h6><strong> <ins>Sosyal Medya</ins> </strong></h6>
+                    <a style="color: white;" href="https://www.instagram.com/"><i> İnstagram</i></a>
+                    <br>
+                    <a style="color: white;" href="https://www.facebook.com/"><i> Facebook</i></a>
+                    <br>
+                    <a style="color: white;" href="https://twitter.com/"><i> Twitter</i></a>
+                    <br>
+                </div>
+                <div class="col-4">
+                    <h6><strong> <ins>Menü</ins> </strong></h6>
+                    <a style="color: white;" href="hakkimizda.html"><i> Hakkımızda</i></a>
+                    <br>
+                    <a style="color: white;" href="iletisim.html"><i> İletişim</i></a>
+
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
